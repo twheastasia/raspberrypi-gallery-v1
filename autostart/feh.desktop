@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Aplication
+Name=feh
+Exec=/home/pi/Desktop/start.sh
