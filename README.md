@@ -47,6 +47,7 @@ feh /home/pi/Pictures/ -rzFYZ -D 60 -R 120 --info "python3 /home/pi/Desktop/info
 ```
 
 ## 5. 群晖服务器定时脚本
+> 这一步是用来远程同步树莓派上的相册。可以有很多其他方法。
 ```bash
 #!/bin/bash
 # ip是zerotier中获得的
