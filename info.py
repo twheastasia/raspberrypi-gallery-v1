@@ -12,7 +12,6 @@ wind_scale = '0'
 with open('/home/pi/Desktop/city_weather.json', 'r', encoding='UTF-8') as f:
     response = json.loads(f.read())
 
-
 if response["code"] == "200":
     tempeature = response["now"]["temp"]
     weather = response["now"]["text"]

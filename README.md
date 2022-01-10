@@ -93,6 +93,16 @@ vim /etc/rc.local
 chmod 666 /sys/class/backlight/rpi_backlight/brightness
 ```
 
+> 调亮脚本
+```bash
+#!/bin/bash
+echo 200 > /sys/class/backlight/rpi_backlight/brightness
+```
+> 调暗脚本
+```bash
+#!/bin/bash
+echo 30 > /sys/class/backlight/rpi_backlight/brightness
+```
 
 ## 9.  显示日期时间
 > 利用python脚本实现
@@ -110,7 +120,6 @@ wind_scale = '0'
 
 with open('/home/pi/Desktop/city_weather.json', 'r', encoding='UTF-8') as f:
     response = json.loads(f.read())
-
 
 if response["code"] == "200":
     tempeature = response["now"]["temp"]
