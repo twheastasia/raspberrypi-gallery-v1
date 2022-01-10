@@ -124,8 +124,8 @@ date = time.strftime("%Y-%m-%d %H:%M", time.localtime())
 print("{0}\n上海: {1}, {2}℃\n{3}{4}级".format(date, weather, tempeature, wind_dir, wind_scale))
 ```
 
-## 10.  显示天气
-> 利用python脚本实现，和风天气api
+## 10. 显示天气
+> 利用python脚本实现，调用[和风天气api](https://dev.qweather.com/)
 >
 > 获取到天气数据后，存在一个json文件里
 
